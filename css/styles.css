@@ -78,12 +78,37 @@ p {
     text-decoration: underline;
 }
 
+/* Footer styles */
+
+.bg-color-main {
+    background-color: #072f3c;
+}
+
+.nav .nav-item p {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.nav .nav-item .nav-link {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline;
+}
+
+li.nav-item {
+    width: fit-content;
+}
+
 /* Mobile view */
 @media only screen and (max-width: 576px) {
-    body {
-        color: green;
+    .carousel-caption h1 {
+        font-size: 1.15rem;
     }
-
+    .carousel-indicators {
+        margin-bottom: 0.25rem;
+    }
     .contact-us-text a {
         width: 100%;
     }
@@ -91,7 +116,4 @@ p {
 
 /* Tablet view */
 @media only screen and (max-width: 992px) {
-    body {
-        background-color: bisque;
-    }
 }
