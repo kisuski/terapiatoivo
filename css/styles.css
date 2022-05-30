@@ -7,9 +7,15 @@ h6 {
     font-family: "Poppins", sans-serif;
 }
 
-p {
+p,
+label {
     font-family: "Quicksand", sans-serif;
     font-size: 1.25rem;
+}
+
+.form-text {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
 }
 
 /* Moving the last link to the end */
@@ -34,6 +40,10 @@ p {
     text-decoration: underline;
 }
 
+/* Active page */
+.active {
+    text-decoration: underline;
+}
 /* Centering carousel caption */
 .carousel-caption {
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
@@ -78,8 +88,12 @@ p {
     text-decoration: underline;
 }
 
-/* Footer styles */
+/* Login button hover */
+form button:hover {
+    text-decoration: underline;
+}
 
+/* Footer styles */
 .bg-color-main {
     background-color: #072f3c;
 }
