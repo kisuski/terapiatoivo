@@ -13,14 +13,12 @@ label {
     font-size: 1.25rem;
 }
 
-.form-text {
-    font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
+a {
+    color: #0c0a0f;
 }
 
-/* Moving the last link to the end */
-.login-link {
-    color: #0c0a0f;
+a:hover {
+    color: #295a70;
 }
 
 /* .navbar-toggler {
@@ -40,16 +38,26 @@ label {
     text-decoration: underline;
 }
 
-/* Active page */
+/* Active page on navigation bar */
 .active {
     text-decoration: underline;
 }
+
+/* .navbar {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%);
+} */
+
 /* Centering carousel caption */
 .carousel-caption {
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
     top: 50%;
     bottom: auto;
     transform: translateY(-50%);
+}
+
+/* Carousel height PC */
+.carousel-item {
+    height: 600px;
 }
 
 .card {
@@ -88,6 +96,12 @@ label {
     text-decoration: underline;
 }
 
+/* Form text styling */
+.form-text {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+}
+
 /* Login button hover */
 form button:hover {
     text-decoration: underline;
@@ -120,8 +134,8 @@ li.nav-item {
     .carousel-caption h1 {
         font-size: 1.15rem;
     }
-    .carousel-indicators {
-        margin-bottom: 0.25rem;
+    .carousel-item {
+        height: auto;
     }
     .contact-us-text a {
         width: 100%;
@@ -130,4 +144,7 @@ li.nav-item {
 
 /* Tablet view */
 @media only screen and (max-width: 992px) {
+    .carousel-item {
+        height: auto;
+    }
 }
