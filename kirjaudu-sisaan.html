@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <!-- Description -->
-    <meta name="description" content="Koulun lopputyö, jonka aiheena on terapiapalveluita tarjoava kuvitteellinen yritys nimeltään Terapia Toivo.">
+    <meta name="description"
+        content="Koulun lopputyö, jonka aiheena on terapiapalveluita tarjoava kuvitteellinen yritys nimeltään Terapia Toivo.">
     <!-- Keywords -->
     <meta name="keywords" content="koulu,projekti,terapia,HTML,CSS,JavaScript,Bootstrap">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,21 +60,21 @@
 
     <main>
         <!-- Login form -->
-        <form class="col-lg-6 mt-5 mb-4 mx-lg-auto mx-2">
+        <form class="col-lg-6 mt-5 mb-4 mx-lg-auto mx-3">
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Sähköposti</label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
+                <label for="loginEmail" class="form-label">Sähköposti</label>
+                <input type="email" class="form-control" id="loginEmail" required>
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Salasana</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="loginPassword" class="form-label">Salasana</label>
+                <input type="password" class="form-control" id="loginPassword" required>
             </div>
-            <button type="submit" class="btn btn-primary mt-1">Kirjaudu</button>
+            <button type="submit" class="btn btn-primary mt-1 px-4">Kirjaudu</button>
         </form>
-        <p class="col-lg-6 mx-lg-auto mx-2">Etkö ole vielä rekisteröitynyt palveluun? <a
+        <p class="col-lg-6 mx-lg-auto mx-3">Etkö ole vielä rekisteröitynyt palveluun? <a
                 href="#">Rekisteröidy
                 tästä.</a></p>
-        <p class="col-lg-6 mx-lg-auto mx-2 mb-5"><a href="#">Unohditko salasanasi?</a></p>
+        <p class="col-lg-6 mx-lg-auto mx-3 mb-5"><a href="#">Unohditko salasanasi?</a></p>
     </main>
 
     <!-- Footer -->
