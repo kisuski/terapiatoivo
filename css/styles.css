@@ -9,8 +9,13 @@ h6 {
 
 p,
 label,
-li,
-.modal-body {
+li {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.25rem;
+}
+
+.privacy-policy-text button {
+    color: #0c0a0f;
     font-family: "Quicksand", sans-serif;
     font-size: 1.25rem;
 }
@@ -19,7 +24,8 @@ a {
     color: #0c0a0f;
 }
 
-a:hover {
+a:hover,
+.privacy-policy-text button:hover {
     color: #295a70;
 }
 
