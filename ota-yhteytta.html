@@ -97,14 +97,105 @@
                 </select>
             </div>
             <button type="submit" class="btn btn-primary mt-2 px-4">Lähetä</button>
+
             <!--Paragraph tag for textContent after submit -->
-            <p class="mt-4" id="thankYouMessage"></p>
+            <p class="mt-4 mb-2" id="thankYouMessage"></p>
         </form>
 
-        <div class="data-protection-ifo col-lg-6 mt-5 mb-4 mx-lg-auto mx-3">
-            <p>Tietosuojaseloste</p>
-        </div>
+        <div class="privacy-policy-text col-lg-6 mt-5 mb-5 mx-lg-auto mx-3">
+            <button type="button" class="btn btn-link p-0" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">
+                Rekisteri- ja tietosuojaseloste
+            </button>
 
+            <!-- Modal -->
+            <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <!-- Modal header -->
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="privacyPolicyModalLabel">Rekisteri- ja tietosuojaseloste</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <h4>Tämä on Terapia Toivon kuvitteellinen EU:n yleisen tietosuoja-asetuksen (GDPR) mukainen
+                                rekisteri- ja
+                                tietosuojaseloste. Laadittu 6.7.2022. Viimeisin muutos 6.7.2022.</h4>
+                            <section class="mt-4">
+                                <h5>1. Rekisterinpitäjä</h5>
+                                <p>Terapia Toivo, Terapiakatu 7C, 00100 Helsinki</p>
+                            </section>
+                            <section class="mt-4">
+                                <h5>2. Rekisteristä vastaava yhteyshenkilö</h5>
+                                <p>Susanna Sivic <a href="mailto:susanna.sivic@terapiatoivo.fi"
+                                        class="d-block">susanna.sivic@terapiatoivo.fi</a>
+                                    <a href="tel:0500000000" class="d-block">0500000000</a>
+                                </p>
+                            </section>
+                            <section class="mt-4">
+                                <h5>3. Rekisterin nimi</h5>
+                                <p>Sivustolla ei ole käytössä rekisteriä.</p>
+                            </section>
+                            <section class="mt-4">
+                                <h5>4. Henkilötietojen käsittelyn tarkoitus</h5>
+                                <p>Yhteydenottolomakkeeseen syötetyt tiedot eivät tallennu tietokantaan tai rekisteriin.
+                                </p>
+                                <p>Jos syötetyt henkilötiedot tallentuisivat, niiden tarkoituksena olisi yhteydenpito
+                                    asiakkaisiin.</p>
+                                <p>Rekisteröintilomakkeeseen syötetyt tiedot tallentuvat tietokantaan.</p>
+                            </section>
+                            <section class="mt-4">
+                                <h5>5. Rekisterin tietosisältö</h5>
+                                <p>Rekisteriin tallennettavia tietoja ovat: henkilön etu- ja sukunimi sekä sähköposti.
+                                </p>
+                            </section>
+                            <section class="mt-4">
+                                <h5>6. Säännönmukaiset tietolähteet</h5>
+                                <p>Rekisteriin tallennettavat tiedot saadaan asiakkaalta rekisteröitymislomakkeella.</p>
+                            </section>
+                            <section class="mt-4">
+                                <h5>7. Tietojen säännönmukaiset luovutukset ja tietojen siirto EU:n tai ETA:n
+                                    ulkopuolelle</h5>
+                                <p>Tietoja ei jaeta
+                                    eteenpäin muille osapuolille. Sivusto on luotu koulun lopputyötä varten eikä
+                                    kyseessä
+                                    ole oikea palvelu.</p>
+                            </section>
+                            <section class="mt-4">
+                                <h5>8. Rekisterin suojauksen periaatteet</h5>
+                                <p>Tietokanta on käytössä ainoastaan lokaalissa versiossa. Rekisteröintiin tai
+                                    sisäänkirjautumiseen ei ole mahdollisuutta GitHubiin ladatussa versiossa.</p>
+                                <p>Rekisteröitymisessä salasana tallentuu tietokantaan salattuna.</p>
+                            </section>
+                            <section class="mt-4">
+                                <h5>9. Tarkastusoikeus ja oikeus vaatia tiedon korjaamista</h5>
+                                <p>Jokaisella rekisterissä olevalla henkilöllä on oikeus tarkistaa rekisteriin
+                                    tallennetut tietonsa ja vaatia mahdollisen virheellisen tiedon korjaamista tai
+                                    puutteellisen tiedon täydentämistä. Mikäli henkilö haluaa tarkistaa hänestä
+                                    tallennetut tiedot tai vaatia niihin oikaisua, pyyntö tulee lähettää kirjallisesti
+                                    rekisterinpitäjälle. Rekisterinpitäjä voi pyytää tarvittaessa pyynnön esittäjää
+                                    todistamaan henkilöllisyytensä. Rekisterinpitäjä vastaa asiakkaalle EU:n
+                                    tietosuoja-asetuksessa säädetyssä ajassa (pääsääntöisesti kuukauden kuluessa).</p>
+                            </section>
+                            <section class="mt-4">
+                                <h5>10. Muut henkilötietojen käsittelyyn liittyvät oikeudet</h5>
+                                <p>Rekisterissä olevalla henkilöllä on oikeus pyytää häntä koskevien henkilötietojen
+                                    poistamiseen rekisteristä ("oikeus tulla unohdetuksi"). Niin ikään rekisteröidyillä
+                                    on muut <a
+                                        href="http://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX%3A32016R0679#d1e2144-1-1"
+                                        target="_blank">EU:n
+                                        yleisen tietosuoja-asetuksen mukaiset oikeudet</a> kuten henkilötietojen
+                                    käsittelyn rajoittaminen tietyissä tilanteissa. Pyynnöt tulee lähettää kirjallisesti
+                                    rekisterinpitäjälle. Rekisterinpitäjä voi pyytää tarvittaessa pyynnön esittäjää
+                                    todistamaan henkilöllisyytensä. Rekisterinpitäjä vastaa asiakkaalle EU:n
+                                    tietosuoja-asetuksessa säädetyssä ajassa (pääsääntöisesti kuukauden kuluessa).</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
