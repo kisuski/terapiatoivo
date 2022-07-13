@@ -121,6 +121,14 @@ a:hover,
     font-size: 1rem;
 }
 
+#quote-photo {
+    width: 100%;
+}
+
+.about-therapists img {
+    width: 85%;
+}
+
 /* Login button hover */
 form button:hover {
     text-decoration: underline;
@@ -148,6 +156,29 @@ li.nav-item {
     width: fit-content;
 }
 
+#message {
+    display: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: #186329;
+}
+
+.valid:before {
+    content: "✔ ";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: #a91e2c;
+}
+
+.invalid:before {
+    content: "✖ ";
+}
+
 /* Mobile view */
 @media only screen and (max-width: 576px) {
     .carousel-caption h1 {
@@ -159,6 +190,12 @@ li.nav-item {
     /* .contact-us-text a {
         width: 100%;
     } */
+    #quote-photo {
+        width: 100%;
+    }
+    .about-therapists img {
+        width: 75%;
+    }
 }
 
 /* Tablet view */
