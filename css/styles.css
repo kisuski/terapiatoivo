@@ -203,4 +203,7 @@ li.nav-item {
     .carousel-item {
         height: auto;
     }
+    .card-group {
+        display: block;
+    }
 }
